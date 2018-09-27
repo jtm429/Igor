@@ -2,6 +2,7 @@
 #define __basic_text_input__
 #include "input.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -12,8 +13,9 @@ class btin : public Input {
 		{
 			cout << question <<endl;
 			cout << "Enter the value to select" <<endl;
-			for(int i = 0; i < choices.size();i++)
-				cout << i << " - " << choices.get(i) << endl;
+			int size = choices.size();
+			for(int i = 0; i < size;i++)
+				cout << i << " - " << choices[i] << endl;
 			int a;
 			cin >> a;
 			return a;

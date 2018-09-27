@@ -2,10 +2,11 @@
 #ifndef __input__
 #define __input__
 #include <vector>
+#include <string>
 
 using namespace std;
 
-__interface Input {
+class Input {
 	public:
 		//you provide options
 		virtual int multiple_choice(string question, vector<string> choices) = 0;
