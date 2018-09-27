@@ -1,10 +1,10 @@
 //stuff
-#include <curses.h>
-#include <iostream>
+#include <vector>
+#include "input.h"
+#include "basicTextInput.h"
 
 
 int main()
 {
-  std::cout << "Hello World!\n";
   return 0;
 };
