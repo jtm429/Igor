@@ -24,7 +24,7 @@ class btin : public Input {
 		{
 			string a;
 			cout << question << endl;
-			cin >> a;
+			getline(cin,a);
 			return a;
 		}
 
