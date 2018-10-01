@@ -1,5 +1,5 @@
 #ifndef __line_node__
-#define __funct_node__
+#define __line_node__
 #include "node.h"
 
 using namespace std;

@@ -8,27 +8,27 @@ node::node()
 	contains = vector<node>();
 }
 
-node::getType()
+string node::getType()
 {
 	return type;
 }
 
-node::getComment()
+string node::getComment()
 {
 	return comment;
 }
 
-node::setType(string t)
+void node::setType(string t)
 {
 	type = t;
 }
 
-node::setComment(string com)
+void node::setComment(string com)
 {
 	comment = com;
 }
 
-node::addNode(node newNode)
+void node::addNode(node newNode)
 {
 	contains.add(newNode);
 }
