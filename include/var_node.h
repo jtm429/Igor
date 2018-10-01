@@ -10,11 +10,21 @@ private:
   string var_type;
   //name of variable
   string name;
+
   //if this needs to initialize
   bool isFirstUsage;
 public:
-  //node for the definition of a function
-  vNode(string name);
+  //next usage of this variable
+  vNode* next;
+  //previous usage of the variable
+  vNode* prev;
+  //node for the definition of a variable
+  vNode(string n, vNode* previous=nullptr);
+
+  //getters
+  string getVarType();
+  string getName();
+  bool isFirstUsage();
 
 };
 
