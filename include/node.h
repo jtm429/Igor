@@ -7,13 +7,13 @@
 using namespace std;
 
 class node {
-	public:
+	private:
 		string type;
 		string comment;
-		Node()
-		{
-			type = "root" // this is the base node class 
-		}
+		vector<node> contains;
+	public:
+		// this is the base node class 
+		node();
 
 
 };
