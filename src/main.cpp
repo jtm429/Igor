@@ -13,8 +13,8 @@ int main()
 	//choices vector
 	vector<string> choices = vector<string>();
 	//adding choices
-	choices.add("nah, I'm good")
-	choices.add("nah, I'm fine")
+	choices.push_back("nah, I'm good")
+	choices.push_back("nah, I'm fine")
 	//querying user
 	std::string ans = in->multiple_choice("hey kids you want some <testing question>?",choices);
 	//returning answer

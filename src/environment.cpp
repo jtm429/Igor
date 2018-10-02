@@ -20,9 +20,10 @@ vector<vNode> igor_env::variablesOfType(string type)
   {
     if(vars[i]->isType(type))
     {
-      nodes.add((*vars[i]));
+      nodes.push_back((*vars[i]));
     }
   }
+  return nodes;
 }
 
 vector<fNode> igor_env::functionsThatReturnType(string type)
@@ -32,9 +33,10 @@ vector<fNode> igor_env::functionsThatReturnType(string type)
   {
     if(funs[i]->returns()==type)
     {
-      nodes.add((*funs[i]));
+      nodes.push_back((*funs[i]));
     }
   }
+  return nodes;
 }
 
 void igor_env::makeSpace(bool inVars)
