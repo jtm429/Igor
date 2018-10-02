@@ -20,6 +20,10 @@ public:
   vNode* prev;
   //node for the definition of a variable
   vNode(string n, vNode* previous=nullptr);
+  //returns true if this variable's type is equal to the type
+  bool isType(string type);
+  //returns true if the type of the node is the same as this nodes type
+  bool isSameType(vNode other);
 
   //getters
   string getVarType();

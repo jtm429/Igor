@@ -19,6 +19,8 @@ public:
   fNode(string name);
   //returns a node containing a call to this function
   vNode call();
+  //returns the return type of this function(Default="void")
+  string returns();
 };
 
 

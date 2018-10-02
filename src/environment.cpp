@@ -14,7 +14,19 @@ igor_env::igor_env(int v = 20; int f = 20)
 
 }
 
-igor_env::makeSpace(bool inVars)
+vector<fNode> igor_env::functionsThatReturnType(string type)
+{
+  vector<fNode> nodes = vector<fNode>();
+  for(int i = 0; i < num_func; i++)
+  {
+    if(funs[i]->returns()==type)
+    {
+      nodes.add((*funs[i]));
+    }
+  }
+}
+
+void igor_env::makeSpace(bool inVars)
 {
 
   if(inVars)
@@ -45,7 +57,7 @@ template <class SomeType>
   return nw;
 }
 
-igor_env::addVariable(vNode var)
+void igor_env::addVariable(vNode var)
 {
   if(vit < num_vars)
   {
@@ -60,7 +72,7 @@ igor_env::addVariable(vNode var)
   }
 }
 
-igor_env::addFunction(fNode fun)
+void igor_env::addFunction(fNode fun)
 {
   if(fit < num_func)
   {

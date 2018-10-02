@@ -2,7 +2,7 @@
 #define __environment_h__
 #include "var_node.h"
 #include "func_node.h"
-
+#include <vector>
 
 
 /*
@@ -36,6 +36,11 @@ public:
   void addVariable(vNode var);
   // adds a function to this environment
   void addFunction(fNode func);
+  //returns a vector with variables of the type
+  vector<vNode> variablesOfType(string type);
+  //returns a vector with functions that return the type
+  vector<fNode> functionsThatReturnType(string type);
+
   //increase size of either array
   //inVars is true if space is needed in vars
   //          false if needed in funs
