@@ -14,8 +14,8 @@ int main()
 	//choices vector
 	vector<string> choices = vector<string>();
 	//adding choices
-	choices.push_back("nah, I'm good")
-	choices.push_back("nah, I'm fine")
+	choices.push_back("nah, I'm good");
+	choices.push_back("nah, I'm fine");
 	//querying user
 	string ans = in->multiple_choice("hey kids you want some <testing question>?",choices);
 	//returning answer
