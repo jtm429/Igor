@@ -1,7 +1,7 @@
 #include "environment.h"
 
 
-igor_env::igor_env(int v = 20; int f = 20)
+igor_env::igor_env(int v = 20, int f = 20)
 {
   num_vars = v;
   num_func = f;
