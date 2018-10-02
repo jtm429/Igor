@@ -45,12 +45,12 @@ void igor_env::makeSpace(bool inVars)
   if(inVars)
   {
 
-    vNode *nw[] = boost(vars, num_vars+sba, num_vars );
+    vNode *nw[] = boost<vNode>(vars, num_vars+sba, num_vars );
     vars = nw;
     num_vars+=sba;
   }
   else {
-    fNode *nw[] = boost(funs, num_func+sba, num_func );
+    fNode *nw[] = boost<fNode>(funs, num_func+sba, num_func );
     funs = nw;
     num_vars+=sba;
 
