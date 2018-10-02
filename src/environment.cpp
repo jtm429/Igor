@@ -13,6 +13,17 @@ igor_env::igor_env(int v = 20; int f = 20)
   sba = 10;
 
 }
+vector<vNode> igor_env::variablesOfType(string type)
+{
+  vector<vNode> nodes = vector<vNode>();
+  for(int i = 0; i < num_vars;i++)
+  {
+    if(vars[i]->isType(type))
+    {
+      nodes.add((*vars[i]));
+    }
+  }
+}
 
 vector<fNode> igor_env::functionsThatReturnType(string type)
 {

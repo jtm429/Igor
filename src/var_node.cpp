@@ -15,6 +15,19 @@ vNode :: vNode(string n, vNode* previous=nullptr)
 
 }
 
+bool isType(string type)
+{
+  bool tru = (type == getVarType());
+  return tru;
+}
+
+bool isSameType(vNode other)
+{
+  bool tru = (other.isType(var_type));
+  return tru;
+
+}
+
 string vNode :: getVarType()
 {
   return var_type;

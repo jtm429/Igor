@@ -6,3 +6,8 @@ fNode :: fNode(string name)
   setType("function");
 
 }
+
+string fNode :: returns()
+{
+  return ret_type;
+}
