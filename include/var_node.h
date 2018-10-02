@@ -12,7 +12,7 @@ private:
   string name;
 
   //if this needs to initialize
-  bool isFirstUsage;
+  bool FirstUsage;
 public:
   //next usage of this variable
   vNode* next;

@@ -38,5 +38,5 @@ string vNode::getName()
 }
 bool vNode::isFirstUsage()
 {
-  return isFirstUsage;
+  return FirstUsage;
 }
