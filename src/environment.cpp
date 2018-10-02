@@ -60,9 +60,9 @@ void igor_env::makeSpace(bool inVars)
 
 //yeah theres no way I'm not gonna have to debug this nightmare later
 template <class SomeType>
-*SomeType[] boost(SomeType *arr[], int newSize, int oldSize)
+SomeType[] boost(SomeType arr[], int newSize, int oldSize)
 {
-  SomeType *nw[] = *SomeType[newSize];
+  SomeType nw[] = SomeType[newSize];
   for(int i = 0; i < oldSize;i++)
   {
     nw = arr[i];
@@ -74,13 +74,13 @@ void igor_env::addVariable(vNode var)
 {
   if(vit < num_vars)
   {
-    vars[vit] = &var;
+    vars[vit] = var;
     vit++;
   }
   else {
     //raise the size of array
     makeSpace(1);
-    vars[vit] = &var;
+    vars[vit] = var;
     vit++;
   }
 }
@@ -89,13 +89,13 @@ void igor_env::addFunction(fNode fun)
 {
   if(fit < num_func)
   {
-    funs[fit] = &fun;
+    funs[fit] = fun;
     fit++;
   }
   else {
     //raise the size of array
     makeSpace(0);
-    funs[fit] = &fun;
+    funs[fit] = fun;
     fit++;
   }
 }
