@@ -25,8 +25,8 @@ private:
 
 
   //array of vars and functions usable in this environment
-  vNode *vars[];
-  fNode *funs[];
+  vNode vars[];
+  fNode funs[];
 public:
   // constructor
   // v - size of variable array

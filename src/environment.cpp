@@ -5,8 +5,8 @@ igor_env::igor_env(int v = 20, int f = 20)
 {
   num_vars = v;
   num_func = f;
-  vars = *vNode[v];
-  funs = *fNode[f];
+  vars = vNode[v];
+  funs = fNode[f];
   vit = 0;
   fit = 0;
   //default sizeboostamount
@@ -18,9 +18,9 @@ vector<vNode> igor_env::variablesOfType(string type)
   vector<vNode> nodes = vector<vNode>();
   for(int i = 0; i < num_vars;i++)
   {
-    if(vars[i]->isType(type))
+    if(vars[i].isType(type))
     {
-      nodes.push_back((*vars[i]));
+      nodes.push_back((vars[i]));
     }
   }
   return nodes;
@@ -33,7 +33,7 @@ vector<fNode> igor_env::functionsThatReturnType(string type)
   {
     if(funs[i]->returns()==type)
     {
-      nodes.push_back((*funs[i]));
+      nodes.push_back((funs[i]));
     }
   }
   return nodes;
@@ -45,12 +45,12 @@ void igor_env::makeSpace(bool inVars)
   if(inVars)
   {
 
-    vNode *nw[] = boost<vNode>(vars, num_vars+sba, num_vars );
+    vNode nw[] = boost<vNode>(vars, num_vars+sba, num_vars );
     vars = nw;
     num_vars+=sba;
   }
   else {
-    fNode *nw[] = boost<fNode>(funs, num_func+sba, num_func );
+    fNode nw[] = boost<fNode>(funs, num_func+sba, num_func );
     funs = nw;
     num_vars+=sba;
 
