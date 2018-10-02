@@ -1,7 +1,7 @@
 #ifndef __environment_h__
 #define __environment_h__
 #include "var_node.h"
-#include "func_node.h"
+#include "funct_node.h"
 #include <vector>
 
 
