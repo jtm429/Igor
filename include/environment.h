@@ -12,10 +12,17 @@
 class igor_env
 {
 private:
-  //default size of variable array
-  int num_vars = 20;
-  //default size of function array
-  int num_func = 20;
+  //size of variable array
+  int num_vars;
+  //size of function array
+  int num_func;
+  //variable iterator
+  int vit;
+  //function iterator
+  int fit;
+  //size boost amount
+  int sba;
+
 
   //array of vars and functions usable in this environment
   vNode *vars[];
@@ -24,11 +31,15 @@ public:
   // constructor
   // v - size of variable array
   // f - size of function array
-  igor_env(int v = 0, int f = 0);
+  igor_env(int v = 20, int f = 20);
   // adds a variable to this environment
   void addVariable(vNode var);
   // adds a function to this environment
   void addFunction(fNode func);
+  //increase size of either array
+  //inVars is true if space is needed in vars
+  //          false if needed in funs
+  void makeSpace(bool inVars);
 
 
 
