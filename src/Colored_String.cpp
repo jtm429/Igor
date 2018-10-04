@@ -2,12 +2,17 @@
 
 string cstr::painthelper(string str, string color)
 {
-  prev = curr;
-  curr = color;
-  newstring = curr + str + prev;
+  if(color != curr)
+  {
+    prev = curr;
+    curr = color;
+    newstring = curr + str;
+    return newstring
+  }
+  else return str;
 }
 
-cstr::cstr(string default_color)
+cstr::cstr(string default_color=white)
 {
   def = default_color;
   curr = def;

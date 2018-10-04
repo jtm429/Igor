@@ -24,6 +24,7 @@ public:
   string def;
   //previous color
   string prev;
+  //current color
   string curr;
 
   cstr(string default_color);
