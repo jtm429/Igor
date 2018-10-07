@@ -19,8 +19,10 @@ cstr::cstr(string default_color=white)
   curr = "null"
 }
 
-string cstr::paintString(string a, string color=def)
+string cstr::paintString(string a, string color="null")
 {
+  if(color == "null")
+    color = def;
   string out = painthelper(a, color);
   return out;
 }

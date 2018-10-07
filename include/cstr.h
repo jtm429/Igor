@@ -32,7 +32,8 @@ public:
   cstr(string default_color);
 
 
-string paintString(string a, string color=def);
+string paintString(string a, string color="null");
+
 };
 
 
