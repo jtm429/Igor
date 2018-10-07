@@ -28,9 +28,10 @@ class btin : public Input {
 			cout << goph.paintString("Enter the value to select", goph.blue) <<endl;
 			int size = choices.size();
 			for(int i = 0; i < size;i++)
+				{
 				string cho = i + " - " + choices[i] +endl;
 				cout << goph.paintString(cho, goph.blue) <<endl;
-
+				}
 			int a;
 			cin >> a;
 			return a;
