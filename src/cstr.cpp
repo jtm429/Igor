@@ -12,8 +12,10 @@ string cstr::painthelper(string str, string color)
   else return str;
 }
 
-cstr::cstr(string default_color=white)
+cstr::cstr(string default_color="null")
 {
+  if(default_color == "null")
+    default_color=white;
   def = default_color;
   //because it hasnt been changed to the default yet
   curr = "null";
