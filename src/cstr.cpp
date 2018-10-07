@@ -7,7 +7,7 @@ string cstr::painthelper(string str, string color)
     prev = curr;
     curr = color;
     newstring = curr + str;
-    return newstring
+    return newstring;
   }
   else return str;
 }
