@@ -1,5 +1,7 @@
 #ifndef __CSTR_H__
 #define __CSTR_H__
+#include <string>
+
 
 using namespace std;
 
