@@ -1,5 +1,5 @@
-#ifndef __COLORED_STRING_H__
-#define __COLORED_STRING_H__
+#ifndef __CSTR_H__
+#define __CSTR_H__
 
 using namespace std;
 

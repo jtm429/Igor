@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "input.h"
-#include "basicTextInput.h"
+#include "btin.h"
 
 using namespace std;
 int main()

@@ -1,12 +1,13 @@
 #ifndef __basic_text_input__
 #define __basic_text_input__
 #include "input.h"
-#include "Colored_String.h"
+#include "cstr.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
+//basicTextInput
 class btin : public Input {
 
 	private:

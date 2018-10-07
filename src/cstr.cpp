@@ -1,4 +1,4 @@
-#include "Colored_String.h"
+#include "cstr.h"
 
 string cstr::painthelper(string str, string color)
 {
