@@ -30,7 +30,7 @@ public:
   cstr(string default_color);
 
 
-  paintString(string a, string color=def);
+string paintString(string a, string color=def);
 };
 
 

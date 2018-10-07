@@ -15,10 +15,11 @@ string cstr::painthelper(string str, string color)
 cstr::cstr(string default_color=white)
 {
   def = default_color;
-  curr = def;
+  //because it hasnt been changed to the default yet
+  curr = "null"
 }
 
-cstr::paintString(string a, string color=def)
+string cstr::paintString(string a, string color=def)
 {
   string out = painthelper(a, color);
   return out;
