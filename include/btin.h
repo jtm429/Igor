@@ -30,7 +30,7 @@ class btin : public Input {
 			int size = choices.size();
 			for(int i = 0; i < size;i++)
 				{
-				string cho = i + " - " + choices[i] +endl;
+				string cho = i + " - " + choices[i];
 				cout << goph.paintString(cho, goph.blue) <<endl;
 				}
 			int a;
