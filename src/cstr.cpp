@@ -16,7 +16,7 @@ cstr::cstr(string default_color=white)
 {
   def = default_color;
   //because it hasnt been changed to the default yet
-  curr = "null"
+  curr = "null";
 }
 
 string cstr::paintString(string a, string color="null")
