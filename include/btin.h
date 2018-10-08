@@ -10,7 +10,7 @@ using namespace std;
 class btin : public Input {
 
 	private:
-		cstr goph = cstr(cstr.red);
+		cstr goph;
 		// enum Format {reset=0,bold=1,underline=4,inverse=7,unbold=21,rmund=24,unverse=27};
 
 		// enum Color {white=37,red=31,blue=34,magenta=35 };

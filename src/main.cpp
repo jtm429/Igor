@@ -7,7 +7,7 @@
 using namespace std;
 int main()
 {
-	ostream logg = clog;
+	basic_ostream logg = clog;
 	//basic text input
 	btin basic = btin();
 	logg << "creating basic text input" << endl;
